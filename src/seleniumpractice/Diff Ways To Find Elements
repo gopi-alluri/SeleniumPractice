@@ -1,0 +1,14 @@
+
+Different ways to find web elements in selenium:
+	Different ways to find an element using ccsSelector:
+		--> tagName[Attribute='value'], [Attribute='value'], tagName#id, #id, tagName.className, .className
+	
+	Different ways to find an element using ccsSelector:
+		--> //tagName[@Attribute='value'], //*[@Attribute='value']
+		
+	Find elements using regularExpressions:
+		xpath: 		--> //tagName[contains(@Attribute='unique part of value'],  //*[contains(@Attribute='unique part of value']
+		ccsSelector: --> tagName[Attribute *= 'unique part of value']
+		
+	locators in selenium:
+		--> By.id(); By.xpath(), By.cssSelector(), By.linkText(), By.className(), By.name(), By.partialLinkText(), By.tagName()
