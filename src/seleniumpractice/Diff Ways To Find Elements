@@ -3,7 +3,7 @@ Different ways to find web elements in selenium:
 	Different ways to find an element using ccsSelector:
 		--> tagName[Attribute='value'], [Attribute='value'], tagName#id, #id, tagName.className, .className
 	
-	Different ways to find an element using ccsSelector:
+	Different ways to find an element using xpath:
 		--> //tagName[@Attribute='value'], //*[@Attribute='value']
 		
 	Find elements using regularExpressions:

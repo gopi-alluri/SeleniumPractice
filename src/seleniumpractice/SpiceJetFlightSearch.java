@@ -49,6 +49,7 @@ public class SpiceJetFlightSearch {
 		// Add number of passengers
 		driver.findElement(By.id("hrefIncAdt")).click();
 		driver.findElement(By.id("hrefIncAdt")).click();
+		driver.findElement(By.id("hrefIncAdt")).click();
 		
 		// Click on Done button
 		driver.findElement(By.id("btnclosepaxoption")).click();
@@ -57,6 +58,9 @@ public class SpiceJetFlightSearch {
 		Select s = new Select(driver.findElement(By.xpath("//select[@id='ctl00_mainContent_DropDownListCurrency']")));
 		s.selectByVisibleText("USD");
 		Thread.sleep(2000L);
+		
+		// select family and friends check box
+		driver.findElement(By.id("ctl00_mainContent_chk_friendsandfamily")).click();
 		
 		// Click on Search button
 		driver.findElement(By.cssSelector("#ctl00_mainContent_btn_FindFlights")).click();
